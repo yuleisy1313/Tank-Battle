@@ -50,4 +50,4 @@ class CONSTANTES(Enum):
     MENU_FONT_SIZE = int(TILE_SIZE * 0.7)
 
     # * Extras
-    ASSETS_PATH = ROOT_PATH / 'assets'
+    ASSETS_PATH = ROOT_PATH / 'Assets'
