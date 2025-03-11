@@ -59,7 +59,7 @@
 4. Ejecuta el juego:
 
    ```bash
-   python Battle_City.py
+   python Tank_Battle.py
    ```
 
 ## 🎯 Jugabilidad
@@ -140,7 +140,7 @@ BattleCity/
 ├── assets/                 # Recursos del juego
 │   ├── image/              # Sprites e imágenes
 │   ├── sounds/             # Efectos de sonido y música
-├── Battle_City.py          # Punto de entrada principal
+├── Tank_Battle.py          # Punto de entrada principal
 ├── README.md               # Esta documentación
 ```
 
