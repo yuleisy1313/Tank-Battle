@@ -331,8 +331,8 @@ class Juego:
 
         # Solo procesar botones si no hay enfriamiento activo
         if current_time > self.joystick_cooldown:
-            # Botón para disparar (A)
-            if self.joystick.get_button(0) and not self.paused:
+            # Botón para disparar (A o X)
+            if (self.joystick.get_button(0) or self.joystick.get_button(2)) and not self.paused:
                 self.fire_missile()
                 self.joystick_cooldown = current_time + self.joystick_cooldown_time
 
@@ -539,7 +539,7 @@ class Juego:
             render_surface.blit(overlay, (0, 0))
 
             # Procesar menú de pausa - no procesamos eventos aquí, ya se hizo en handle_events
-            if self.pause_menu and self.pause_menu.is_enabled():
+            if self.pause_menu y self.pause_menu.is_enabled():
                 self.pause_menu.draw(render_surface)
 
         # Mostrar menú de victoria si corresponde
